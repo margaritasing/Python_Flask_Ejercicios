@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Login</title>
+  </head>
+  <body>
+
+    <a href="{{ url_for('principal') }}">Principal</a>
+    {% if current_user.is_authenticated %}
+      <a href="{{ url_for('salir') }}">Salir</a>
+    {% else %}
+      <a href="{{ url_for('entrar') }}">Entrar</a>
+      <a href="{{ url_for('registrar') }}">Registrar</a>
+    {% endif %}
+
+    {% block contenido %}
+
+
+
+    {% endblock %}
+
+
+  </body>
+</html>

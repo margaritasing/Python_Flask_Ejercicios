@@ -12,8 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(directorio, 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 basededatos = SQLAlchemy(app)
-
-migrate = Migrate(app.basededatos)
+Migrate(app, basededatos)
 # Creacion del modelo a base de datos
 class Persona(basededatos.Model):
     __tablaname__ = 'Persona'

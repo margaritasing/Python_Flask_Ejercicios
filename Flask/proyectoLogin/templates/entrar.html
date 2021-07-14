@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<form method="POST">
+  {{ formulario.hidden_tag() }}
+  {{ formulario.email.label }} {{ formulario.email }} <br/>
+  {{ formulario.password.label }} {{ formulario.password }} <br/>
+  {{ formulario.boton }}
+</form>
+
+{% endblock %}

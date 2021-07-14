@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gestión de mascotas</title>
+  </head>
+  <body>
+    <div>
+      <a href="{{ url_for('principal')}}"> Principal </a>
+      <a href="{{ url_for('lista')}}"> Listar </a>
+      <a href="{{ url_for('alta')}}"> Añadir </a>
+      <a href="{{ url_for('borrar')}}"> Eliminar </a>
+    </div>
+
+    {% block contenido %}
+
+    {% endblock %}
+    
+  </body>
+</html>

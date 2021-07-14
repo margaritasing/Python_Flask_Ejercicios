@@ -1,0 +1,26 @@
+{% extends "basico.html" %}
+
+{% block contenido%}
+
+<h3>Resultado de la validacion</h3>
+
+{%  if todo   %}
+  <p>El nombre cumple todo</p>
+{% else %}
+    <ul>
+        {% if not minuscula %}
+          <li>No tiene minuscula</li>
+        {% endif %}
+
+        {% if not mayuscula %}
+          <li>No tiene mayuscula</li>
+        {% endif %}
+
+        {% if not numero %}
+          <li>No tiene numero</li>
+        {% endif %}
+    </ul>
+{% endif %}
+
+
+{% endblock %}

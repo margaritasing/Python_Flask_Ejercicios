@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nuestro sitio web</title>
+  </head>
+  <body>
+
+    <div class="">
+      <a href="{{ url_for('pagina1') }}"> Pagina 1 </a>
+      <a href="{{ url_for('pagina2') }}"> Pagina 2 </a>
+      <a href="{{url_for('static',filename = 'buho.png')}}"> Buho </a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    {% block contenido %}
+
+
+    {% endblock %}
+
+    <h4>Esto es pie de pagina</h4>
+  </body>
+</html>

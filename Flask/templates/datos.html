@@ -1,0 +1,16 @@
+<h3>Introduzca los datos</h3>
+<form class="" method="POST">
+  {{ formulario.hidden_tag() }}
+  {{ formulario.nombre.label }} {{ formulario.nombre }}
+  <br/>
+  {{ formulario.edad.label }} {{formulario.edad }}
+  <br/>
+  {{ formulario.sexo.label }} {{formulario.sexo }}
+  <br/>
+  {{ formulario.color.label }} {{ formulario.color }}
+  <br/>
+   Comentario {{ formulario.comentario }}
+   <br/>
+   {{ formulario.boton }}
+
+  </form>
